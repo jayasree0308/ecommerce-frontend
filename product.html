@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/product.js"></script>
+</head>
+<body>
+
+  <!-- Header (same as index.html) -->
+  <header>
+    <div class="logo">MyStore</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Search products...">
+      <div class="cart-icon" onclick="window.location.href='cart.html'">
+        🛒 <span id="cartCount">0</span>
+      </div>
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+ <section class="product-detail" id="productDetail">
+  <!-- Product will be injected here by JS -->
+</section>
+
+</body>
+</html>

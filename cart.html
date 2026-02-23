@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/cart.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MyStore</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Search products...">
+      <div class="cart-icon" onclick="window.location.href='cart.html'">
+        🛒 <span id="cartCount">0</span>
+      </div>
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="cart-section" id="cartSection">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: $<span id="totalPrice">0</span></h3>
+    <button id="checkoutBtn">Proceed to Checkout</button>
+    <button onclick="window.location.href='index.html'">Continue Shopping</button>
+  </section>
+
+</body>
+</html>
